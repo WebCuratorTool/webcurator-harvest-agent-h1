@@ -44,7 +44,7 @@ import java.util.*;
  * engine to perform the harvesting of the web sites.
  * @author nwaight
  */
-@SuppressWarnings("all")
+@SuppressWarnings("unchecked")
 public class HarvestAgentHeritrix extends AbstractHarvestAgent implements LogProvider {       
     /** The name of the profile file. */
     private static final String PROFILE_NAME = "order.xml";    

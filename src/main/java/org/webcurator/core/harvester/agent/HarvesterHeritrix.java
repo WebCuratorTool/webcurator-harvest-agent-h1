@@ -138,7 +138,7 @@ public class HarvesterHeritrix implements Harvester {
 	                status.setAverageURIs(st.processedDocsPerSec());
 	                status.setAverageKBs(st.processedKBPerSec());
 	                status.setElapsedTime(st.getCrawlerTotalElapsedTime());
-	                status.setDataDownloaded(st.totalBytesWritten());
+	                status.setDataDownloaded(st.totalBytesCrawled());
 	                if (st instanceof StatisticsTracker) {
 	                    StatisticsTracker statsTrack = (StatisticsTracker) st;
 	                    status.setUrlsDownloaded(statsTrack.successfullyFetchedCount());
